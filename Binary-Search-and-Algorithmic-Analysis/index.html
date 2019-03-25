@@ -19,7 +19,7 @@
     <meta name="description" content>
     <meta name="author" content="Ryan Wang">
     <meta name="keywords" content>
-    <title>Basic C++: IO &amp; Variables &amp; Simple Arithmetics ~ Telopea CS</title>
+    <title>Binary Search and Algorithmic Analysis ~ Telopea CS</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/mdb.min.css">
@@ -66,10 +66,10 @@
     <div class="full-bg-img">
         <div class="mask rgba-black-light flex-center">
         <div class="container text-center white-text wow fadeInUp">
-            <p class="h2">Basic C++: IO & Variables & Simple Arithmetics</p>
+            <p class="h2">Binary Search and Algorithmic Analysis</p>
             <br>
             
-            <p>Monday, March 11th 2019, 2:28 pm</p>
+            <p>Wednesday, March 20th 2019, 2:13 pm</p>
             
         </div>
         </div>
@@ -83,87 +83,37 @@
     <div class="row">
         <div class="col-md-8 offset-md-2 ">
             <div class="post-content py-5 z-depth-3 main">
-                <p><a href="https://www.onlinegdb.com/myfiles" target="_blank" rel="noopener">https://www.onlinegdb.com/myfiles</a><br>See:<br>IO: <a href="https://thyroidr.github.io/Basic-C++/input-output/">https://thyroidr.github.io/Basic-C++/input-output/</a> then students do “Hello World!”<br>Variables: <a href="https://thyroidr.github.io/Basic-C++/variables/">https://thyroidr.github.io/Basic-C++/variables/</a> then students declare and print variable.</p>
-<h2 id="Simple-Arithmetics"><a href="#Simple-Arithmetics" class="headerlink" title="Simple Arithmetics"></a>Simple Arithmetics</h2><h3 id="Unitary-Operators"><a href="#Unitary-Operators" class="headerlink" title="Unitary Operators"></a>Unitary Operators</h3><table>
-<thead>
-<tr>
-<th>Operators</th>
-<th>Operation</th>
-<th>Placement</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>++</td>
-<td>Add 1 to the operand</td>
-<td>In front of or after the operand</td>
-<td><code>++a</code> or <code>a++</code></td>
-</tr>
-<tr>
-<td>–</td>
-<td>Subtract 1 from the operand</td>
-<td>In front of or after the operand</td>
-<td><code>--a</code> or <code>a--</code></td>
-</tr>
-</tbody>
-</table>
-<h3 id="Binary-Operators"><a href="#Binary-Operators" class="headerlink" title="Binary Operators"></a>Binary Operators</h3><table>
-<thead>
-<tr>
-<th>Operators</th>
-<th>Operation</th>
-<th>Placement</th>
-<th>Example</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>=</code></td>
-<td>Assigns the value of the back operand to the front operand</td>
-<td>Between operands</td>
-<td><code>a = b</code></td>
-</tr>
-<tr>
-<td><code>+</code></td>
-<td>Returns the sum of two operands</td>
-<td>Between operands</td>
-<td><code>a + b</code></td>
-</tr>
-<tr>
-<td><code>-</code></td>
-<td>Returns the difference between the two operands</td>
-<td>Between operands</td>
-<td><code>a - b</code></td>
-</tr>
-<tr>
-<td><code>*</code></td>
-<td>Returns the product of the two operands</td>
-<td>Between operands</td>
-<td><code>a * b</code></td>
-</tr>
-<tr>
-<td><code>/</code></td>
-<td>Returns the quotient of the two operands (rounded down if needed)</td>
-<td>Between operands</td>
-<td><code>a / b</code></td>
-</tr>
-<tr>
-<td><code>%</code></td>
-<td>Returns the remainder of the two operands</td>
-<td>Between operands</td>
-<td><code>a % b</code></td>
-</tr>
-</tbody>
-</table>
-<p>Having a <code>=</code> sign after a binary operator other than <code>=</code> is equivalent to operate then assign, e.g.<br><code>a += b</code> is equivalent to <code>a = a + b</code>. </p>
-<p>Students then solve <code>Addition</code> and <code>Sitting or Standing?</code> on Orac if time permits.</p>
+                <p>Consider a list of numbers in increasing order (that is, every number except the first is bigger than the previous number), e.g.</p>
+<pre><code>1 7 8 12 14 15 22 23 26 29
+</code></pre><p>Suppse we want to develop an efficient method (algorithm) to find the smallest number in the list, that is larger than $x$. The simple method is just to iterate over the list, maintaining the smallest number larger than x that we have iterated so far and updating it at every step of iteration. This has a time complexity linear to the size of the list (which we will denote using $n$), we describe this using the Big-O notation $O(n)$.</p>
+<p>The Big-O notation roughly describes the number of computations needed to run an algorithm, in relation to some variables (in the above case $n$). Let the actual number of computations needed be function $a$, then contents of $O(\ldots)$ is a function $f$, such that for some $[k, \infty]$ values of the variables, $\exists l, h: lf \le a \le hf$. You can simply understand this as $f$ is a basic expression that best approximates $a$. </p>
+<p>The major question in informatics is how can we minimise the time complexity to solve certain problems. In this case, $O(n)$ is considered a poor time complexity. A time complexity of $O(\log_2 n)$ can be achieved using a technique of binary search ($\log_2 n$ grows much slower compared to $n$, when $n = 10^6$, $\log_2 n \le 20$). </p>
+<h2 id="Binary-Search"><a href="#Binary-Search" class="headerlink" title="Binary Search"></a>Binary Search</h2><p>The technique uses the fact the numbers are sorted (the list is <strong>monotonic</strong>). In the following precedure, we denote the range the answer could be in as $[l, r]$, and the $i$-th element of the list as $A_i$. </p>
+<h3 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure"></a>Procedure</h3><ol>
+<li>Let us denote the number of numbers in the list as $n$. We will also set $l$ to $1$ and $r$ to $n$. </li>
+<li>If $l = r$, then we have found the answer, it is the $l$-th element, terminate.</li>
+<li>Set $m$ (the middle element of $[l, r]$) to the floor of $\frac{l+r}{2}$.</li>
+<li>If $A_m \le x$ , set $l$ to $m+1$, else set $r$ to $m$, go to step 2.</li>
+</ol>
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre><code class="c++">int l = 1, r = n;
+while(l != r){
+    int m = (l + r) / 2;
+    if(A[m] &lt;= x)
+        l = m + 1;
+    else
+        r = m;
+}
+</code></pre>
+<h3 id="Time-Complexity"><a href="#Time-Complexity" class="headerlink" title="Time Complexity"></a>Time Complexity</h3><p>Notice that $\log_2 k$ essentially means how many times do we need to divide $k$ by $2$ to get something smaller than 1 (only for positive $k$’s). Discuss why $O(\log_2 n)$ might be the time complexity for binary search.</p>
+<h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><p>Google Kick Start 2019 Practice Round: <a href="https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051060/00000000000588f4" target="_blank" rel="noopener">https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051060/00000000000588f4</a></p>
+<p>This problem might take you a long time thinking or googling about binary search<br>FARIO 2009: <a href="http://orac.amt.edu.au/cgi-bin/train/problem.pl?problemid=378" target="_blank" rel="noopener">http://orac.amt.edu.au/cgi-bin/train/problem.pl?problemid=378</a></p>
+<p>Ctrl-A for hint:<br><span style="color:white">Consider binary searching the possible answers and then testing if they are possible</span></p>
 
                 <hr>
                 <div>
                     <p>
                          
-                        <span class="badge badge-light">#&nbsp;c++</span>
+                        <span class="badge badge-light">#&nbsp;algo</span>
                         &nbsp;
                         
                     </p>
