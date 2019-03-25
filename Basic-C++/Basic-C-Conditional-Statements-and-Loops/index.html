@@ -1,89 +1,164 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-
-
-
-
-
-
-
-
-
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="76x76" href="/TPS-CS/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/TPS-CS/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content>
-    <meta name="author" content="Ryan Wang">
-    <meta name="keywords" content>
-    <title>Basic C++: Conditional Statements and Loops ~ Telopea CS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/mdb.min.css">
-    <link rel="stylesheet" href="/TPS-CS/css/style.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1067060_vr10bjtg3us.css">
-    
-        <link rel="stylesheet" href="/TPS-CS/css/Prettify/tomorrow-night-eighties.min.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-    
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Basic C++: Conditional Statements and Loops | Telopea CS</title>
+  
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/TPS-CS/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+  
+  
 </head>
 
 <body>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-<div class="container">
-    <a class="navbar-brand" href="/TPS-CS/"><strong>Telopea CS</strong></a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto text-center">
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/">Home</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/archives/">Archives</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/about/">About</a>
-            </li>
-            
-        </ul>
-    </div>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
 </div>
 
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class="wrapper">
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href="/TPS-CS/">
+        
+          Telopea CS
+        
+      </a>
+			<div class="menu">
+				<ul class="h-list">
+          
+				</ul>
+			</div>
 
-</nav>
-    <div class="view intro-2" style='background: url("https://i.imgur.com/oADD1Ip.jpg")no-repeat center center;background-size: cover;'>
-    <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
-        <div class="container text-center white-text wow fadeInUp">
-            <p class="h2">Basic C++: Conditional Statements and Loops</p>
-            <br>
-            
-            <p>Monday, March 11th 2019, 2:28 pm</p>
-            
-        </div>
-        </div>
-    </div>
-    </div>
-  </header>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索">
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class="switcher h-list">
+				
+					<li class="s-search"><a class="fas fa-search fa-fw" href="javascript:void(0)"></a></li>
+				
+				<li class="s-menu"><a class="fas fa-bars fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
 
-  <main>
+		<div class="nav-sub container container--flex">
+			<a class="logo flat-box"></a>
+			<ul class="switcher h-list">
+				<li class="s-comment"><a class="flat-btn fas fa-comments fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-toc"><a class="flat-btn fas fa-list fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
   
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 offset-md-2 ">
-            <div class="post-content py-5 z-depth-3 main">
-                <h2 id="Boolean-Operators"><a href="#Boolean-Operators" class="headerlink" title="Boolean Operators"></a>Boolean Operators</h2><p>In addition to the arithmetic operators, there are also the boolean (logic) operators in C++. These are the operators that return a <code>true</code> value or a <code>false</code> value. <code>true</code> and <code>false</code> values can be replaced with <code>1</code> and <code>0</code> respectively, although really, in C++, <code>0</code> is <code>false</code>, and everything else is <code>true</code>. </p>
+<section class="meta">
+  
+  
+  <div class="meta" id="header-meta">
+    
+      
+          <h1 class="title">Basic C++: Conditional Statements and Loops</h1>
+      
+    
+
+    <div class="new-meta-box">
+      
+        <div class="new-meta-item author">
+          <a href="https://thyroidr.github.io/TPS-CS">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Ryan Wang
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class="notlink">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            2019-03-11
+          </a>
+        </div>
+      
+      
+        
+          
+          <div class="new-meta-item category">
+            <a href="/TPS-CS/categories/Basic-C/">
+              <i class="fas fa-folder-open" aria-hidden="true"></i>
+              Basic C++
+            </a>
+          </div>
+        
+      
+      
+        
+          <div class="new-meta-item browse busuanzi">
+            <a class="notlink">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+              <span id="busuanzi_value_page_pv">
+                <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <h2 id="Boolean-Operators"><a href="#Boolean-Operators" class="headerlink" title="Boolean Operators"></a>Boolean Operators</h2><p>In addition to the arithmetic operators, there are also the boolean (logic) operators in C++. These are the operators that return a <code>true</code> value or a <code>false</code> value. <code>true</code> and <code>false</code> values can be replaced with <code>1</code> and <code>0</code> respectively, although really, in C++, <code>0</code> is <code>false</code>, and everything else is <code>true</code>. </p>
 <p>The operators below can be used to compare regular variables (so long as they have the operators defined, you don’t need to worry abot this).</p>
 <table>
 <thead>
@@ -148,66 +223,15 @@
 </tr>
 </tbody>
 </table>
-<pre><code class="c++">/*
-structure of if...else statements:
-
-if(boolean statement){
-    what to do if statement is true
-} else {
-    what to do if statement is false
-}
-*/
-
-#include &lt;iostream&gt;
-using namespace std;
-int main(){
-    int a, b;
-    cin&gt;&gt;a&gt;&gt;b;
-    if(a == b){
-        cout&lt;&lt;&quot;EQUAL&quot;&lt;&lt;endl;
-    }
-
-    bool equal;
-    equal = (a == b);                   // boolean variables can be assigned
-                                        // boolean statements
-    if(!equal){
-        cout&lt;&lt;&quot;NOT EQUAL&quot;&lt;&lt;endl;
-    }
-
-    if(a + b == 10){                    // arithmetic expressions go before
-                                        // boolean statements
-        cout&lt;&lt;&quot;SUM TO 10&quot;&lt;&lt;endl;
-    } else {
-        cout&lt;&lt;&quot;DO NOT SUM TO 10&quot;&lt;&lt;endl;
-    }
-
-    return 0;
-}
-</code></pre>
+<a id="more"></a>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">structure of if...else statements:</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">if(boolean statement)&#123;</span></span><br><span class="line"><span class="comment">    what to do if statement is true</span></span><br><span class="line"><span class="comment">&#125; else &#123;</span></span><br><span class="line"><span class="comment">    what to do if statement is false</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;iostream&gt;</span></span></span><br><span class="line"><span class="keyword">using</span> <span class="keyword">namespace</span> <span class="built_in">std</span>;</span><br><span class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">()</span></span>&#123;</span><br><span class="line">    <span class="keyword">int</span> a, b;</span><br><span class="line">    <span class="built_in">cin</span>&gt;&gt;a&gt;&gt;b;</span><br><span class="line">    <span class="keyword">if</span>(a == b)&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"EQUAL"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">bool</span> equal;</span><br><span class="line">    equal = (a == b);                   <span class="comment">// boolean variables can be assigned</span></span><br><span class="line">                                        <span class="comment">// boolean statements</span></span><br><span class="line">    <span class="keyword">if</span>(!equal)&#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"NOT EQUAL"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span>(a + b == <span class="number">10</span>)&#123;                    <span class="comment">// arithmetic expressions go before</span></span><br><span class="line">                                        <span class="comment">// boolean statements</span></span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"SUM TO 10"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="built_in">cout</span>&lt;&lt;<span class="string">"DO NOT SUM TO 10"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="number">0</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h2 id="Loops"><a href="#Loops" class="headerlink" title="Loops"></a>Loops</h2><p>“I go to school until the end of the term” is a loop statement. In this sentence, we have a condition “until the end of the term” and an action “I go to school”. While “the time is not the end of the term”, “I go to school”.</p>
-<h3 id="The-“for”-Statement"><a href="#The-“for”-Statement" class="headerlink" title="The “for” Statement"></a>The “for” Statement</h3><pre><code class="c++">for(Line_A; statement; Line_B){
-    ......;
-    ......;
-}
-</code></pre>
+<h3 id="The-“for”-Statement"><a href="#The-“for”-Statement" class="headerlink" title="The “for” Statement"></a>The “for” Statement</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(Line_A; statement; Line_B)&#123;</span><br><span class="line">    ......;</span><br><span class="line">    ......;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p><code>Line_A</code> is executed in the beginning of the loop; <code>Line_B</code> is executed at the end of every cycle. An example for statement may be,</p>
-<pre><code class="c++">for(int i = 1; i &lt;= 5; i++){
-    s[i] = s[i] + 1;
-    book[s[i]] = true;
-}
-</code></pre>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++)&#123;</span><br><span class="line">    s[i] = s[i] + <span class="number">1</span>;</span><br><span class="line">    book[s[i]] = <span class="literal">true</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <p>The above code would run <code>5</code> times, adding <code>1</code> to <code>s[1...5]</code>, and setting <code>book[s[1....5]]</code> to <code>true</code>.</p>
-<h3 id="The-“while”-Statement"><a href="#The-“while”-Statement" class="headerlink" title="The “while” Statement"></a>The “while” Statement</h3><p>Below is a template of the while statement:</p>
-<pre><code class="c++">while(statement){
-    ......;
-}
-</code></pre>
-<p>While the statement is true, the lines within the large brackets are executed. An example while statement is below,</p>
-<pre><code class="c++">while(l &lt; r){
-    if(s[l] &gt; s[r]) r--;
-    else l++;
-}
-</code></pre>
+<h3 id="The-“while”-Statement"><a href="#The-“while”-Statement" class="headerlink" title="The “while” Statement"></a>The “while” Statement</h3><p>Below is a template of the while statement:<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(statement)&#123;</span><br><span class="line">    ......;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
+<p>While the statement is true, the lines within the large brackets are executed. An example while statement is below,<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">while</span>(l &lt; r)&#123;</span><br><span class="line">    <span class="keyword">if</span>(s[l] &gt; s[r]) r--;</span><br><span class="line">    <span class="keyword">else</span> l++;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <h2 id="“Continue”-amp-“Break”-Keyword"><a href="#“Continue”-amp-“Break”-Keyword" class="headerlink" title="“Continue” &amp; “Break” Keyword"></a>“Continue” &amp; “Break” Keyword</h2><p>There are two keywords that may be used in loops to essentially jump around in the loop,</p>
 <table>
 <thead>
@@ -227,80 +251,188 @@ int main(){
 </tr>
 </tbody>
 </table>
-<p>Below is an example</p>
-<pre><code class="c++">for(int i = 1; i &lt;= 5; i++){
-    if(i == 3) continue;
-    if(i == 5) break;
-    cout&lt;&lt;i&lt;&lt;endl;
-}
-</code></pre>
+<p>Below is an example<br><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">for</span>(<span class="keyword">int</span> i = <span class="number">1</span>; i &lt;= <span class="number">5</span>; i++)&#123;</span><br><span class="line">    <span class="keyword">if</span>(i == <span class="number">3</span>) <span class="keyword">continue</span>;</span><br><span class="line">    <span class="keyword">if</span>(i == <span class="number">5</span>) <span class="keyword">break</span>;</span><br><span class="line">    <span class="built_in">cout</span>&lt;&lt;i&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></p>
 <p>The output would be:<br><code>1</code><br><code>2</code><br><code>4</code></p>
 <h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><p>Solve <code>A Mindbending Scenario</code> and <code>The Trenmendous Tak-Tak Tree</code> on Orac.</p>
 
-                <hr>
-                <div>
-                    <p>
-                         
-                        <span class="badge badge-light">#&nbsp;c++</span>
-                        &nbsp;
-                        
-                    </p>
+      </div>
+        
+          <section class="meta" id="footer-meta">
+            <hr>
+            <div class="new-meta-box">
+              
+                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-03-25T21:12:02+11:00">
+                  <a class="notlink">
+                    <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                    2019-03-25
+                  </a>
                 </div>
-                <br>
+              
+              
                 
-                    <p class="note note-warning">CC-BY-SA 3.0</p>
+                <div class="new-meta-item meta-tags"><a class="tag" href="/TPS-CS/tags/c/"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;c++</a></div>
+              
+              
+            </div>
+          </section>
+        
+
+        
+            <div class="prev-next">
+                
+                    <section class="prev">
+                        <span class="art-item-left">
+                            <h6><i class="fas fa-chevron-left" aria-hidden="true"></i>&nbsp;上一页</h6>
+                            <h4>
+                                <a href="/TPS-CS/Binary-Search-and-Algorithmic-Analysis/" rel="prev" title="Binary Search and Algorithmic Analysis">
+                                  
+                                      Binary Search and Algorithmic Analysis
+                                  
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/TPS-CS/tags/algo/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>algo</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/TPS-CS/Basic-C++/Basic-C-IO-Variables-Simple-Arithmetics/" rel="prev" title="Basic C++: IO &amp; Variables &amp; Simple Arithmetics">
+                                    
+                                        Basic C++: IO &amp; Variables &amp; Simple Arithmetics
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/TPS-CS/tags/c/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>c++</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
                 
             </div>
+        
+
+    </section>
+
+</article>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+
+
+
+
+<script>
+    window.subData = {
+        title: 'Basic C++: Conditional Statements and Loops',
+        tools: true
+    }
+</script>
+
+
         </div>
-        <div class="d-none d-md-block col-md-2">
+        <aside class='l_side'>
             
-  <div id="toc" class="py-5">
-    <p class="h6"><i class="iconfont icon-toc" style="vertical-align:middle"></i> Toc:</p> 
-    <div id="tocbot"></div>
-  </div>
 
-        </div>
-    </div>        
-</div>
-
-<br><br><br>
-
-<!-- Comments -->
-<div class="comments" id="comments">
- 
-</div>
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
   
-  </main>
-
-<footer class="mt-5">
-  <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank"><b>HEXO</b></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/invom/Material-T" target="_blank"> <b>Material-T</b></a>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
   </div>
 </footer>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/jquery-3.3.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/mdb.min.js"></script>
-  <script src="/TPS-CS/js/main.js"></script>
-  
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
-    
-    <script src="/TPS-CS/js/post.js"></script>
-    
-      <script src="/TPS-CS/js/plugins/prettify.js"></script>
-      <script>
-          $(document).ready(function(){
-              $('pre').addClass('prettyprint linenums');
-              prettyPrint();
-          })
-      </script>
-    
-  
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/TPS-CS/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+
+  <script src="/TPS-CS/js/app.js"></script>
+<script src="/TPS-CS/js/search.js"></script>
+<script src="/TPS-CS/js/clipboard-use.js"></script>
+
+
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {

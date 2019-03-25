@@ -1,210 +1,657 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-
-
-
-
-
-
-
-
-
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="76x76" href="/TPS-CS/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/TPS-CS/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content>
-    <meta name="author" content="Ryan Wang">
-    <meta name="keywords" content>
-    <title>Telopea CS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/mdb.min.css">
-    <link rel="stylesheet" href="/TPS-CS/css/style.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1067060_vr10bjtg3us.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-    
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Telopea CS</title>
+  
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/TPS-CS/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+  
+  
 </head>
 
 <body>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header style="height: 100vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-<div class="container">
-    <a class="navbar-brand" href="/TPS-CS/"><strong>Telopea CS</strong></a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto text-center">
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/">Home</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/archives/">Archives</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/about/">About</a>
-            </li>
-            
-        </ul>
-    </div>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
 </div>
 
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class="wrapper">
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href="/TPS-CS/">
+        
+          Telopea CS
+        
+      </a>
+			<div class="menu">
+				<ul class="h-list">
+          
+				</ul>
+			</div>
 
-</nav>
-    <div class="view intro-2" style='background: url("https://i.imgur.com/KiFmU1W.png")no-repeat center center;background-size: cover;'>
-    <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
-        <div class="container text-center white-text wow fadeInUp">
-            <p class="h2">CS Course for Telopea Park School, 2019</p>
-            <br>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索">
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class="switcher h-list">
+				
+					<li class="s-search"><a class="fas fa-search fa-fw" href="javascript:void(0)"></a></li>
+				
+				<li class="s-menu"><a class="fas fa-bars fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+
+		<div class="nav-sub container container--flex">
+			<a class="logo flat-box"></a>
+			<ul class="switcher h-list">
+				<li class="s-comment"><a class="flat-btn fas fa-comments fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-toc"><a class="flat-btn fas fa-list fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
             
-        </div>
-        </div>
-    </div>
-    </div>
-  </header>
 
-  <main>
-    
-  <div class="container">
-    <div class="py-5 z-depth-3 main">
+
+
+  <section class="post-list">
       
-      <div class="container">
-        <div class="row">
-          <div class="col-10 offset-1">
-            
-
-<div class="row mb-3">
-
-<div class="col-12 col-md-8 offset-md-2">
-    <a href="/TPS-CS/Binary-Search-and-Algorithmic-Analysis/" class="h4" style="font-weight: 700;">Binary Search and Algorithmic Analysis</a>
-    
-      <p class="mb-1">Consider a list of numbers in increasing order (that is, every number except the first is bigger than the previous number), e.g.
-1 7 8 12 14 15 22 23 26 29
-Suppse we want to develop an efficient method (algorithm) to find the smallest number in the list, that is larger than $x$. The simple method is...</p>
-    
-    
-      <p>
-        <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-20
-        &nbsp;
         
-            <i class="iconfont icon-cc-tag-more"></i>
-            
-                algo&nbsp;
-            
+          
         
-      </p>
-    
-</div>
-</div>
-
-<div class="row mb-3">
-
-<div class="col-12 col-md-8 offset-md-2">
-    <a href="/TPS-CS/Basic-C++/Basic-C-Conditional-Statements-and-Loops/" class="h4" style="font-weight: 700;">Basic C++: Conditional Statements and Loops</a>
-    
-      <p class="mb-1">Boolean OperatorsIn addition to the arithmetic operators, there are also the boolean (logic) operators in C++. These are the operators that return a true value or a false value. true and false values can be replaced with 1 and 0 respectively, although really, in C++, 0 is false, and everything else ...</p>
-    
-    
-      <p>
-        <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-11
-        &nbsp;
+          
         
-            <i class="iconfont icon-cc-tag-more"></i>
-            
-                c++&nbsp;
-            
+          
         
-      </p>
-    
-</div>
-</div>
-
-<div class="row mb-3">
-
-<div class="col-12 col-md-8 offset-md-2">
-    <a href="/TPS-CS/Basic-C++/Basic-C-IO-Variables-Simple-Arithmetics/" class="h4" style="font-weight: 700;">Basic C++: IO &amp; Variables &amp; Simple Arithmetics</a>
-    
-      <p class="mb-1">https://www.onlinegdb.com/myfilesSee:IO: https://thyroidr.github.io/Basic-C++/input-output/ then students do “Hello World!”Variables: https://thyroidr.github.io/Basic-C++/variables/ then students declare and print variable.
-Simple ArithmeticsUnitary Operators
-
-
-Operators
-Operation
-Placement
-Example
-...</p>
-    
-    
-      <p>
-        <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-11
-        &nbsp;
+          
         
-            <i class="iconfont icon-cc-tag-more"></i>
-            
-                c++&nbsp;
-            
+      
+
+
+
+      
+
+      
+
+      
         
-      </p>
+          
+            <div class="post-wrapper">
+              <article class="post reveal ">
     
-</div>
-</div>
-
-<div class="row mb-3">
-
-<div class="col-12 col-md-8 offset-md-2">
-    <a href="/TPS-CS/Course-Outline/" class="h4" style="font-weight: 700;">Course Outline</a>
-    
-      <p class="mb-1">“Computer science is no more about computers than astronomy is about telescopes” - Edsger Dijkstra
-
-Course delivered by Ryan Wang (current year 11 student at Bundah). 
-GoalThe course is aimed to improve students’ problem solving abilities and computational thinking. Skills developed are applicable i...</p>
-    
-    
-      <p>
-        <i class="iconfont icon-riqi2"></i>&nbsp;2019-03-11
-        &nbsp;
-        
-      </p>
-    
-</div>
-</div>
- 
-<br><br>
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+<section class="meta">
   
-  </main>
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/TPS-CS/Binary-Search-and-Algorithmic-Analysis/">
+              
+                  Binary Search and Algorithmic Analysis
+              
+          </a>
+      </h2>
+    
 
-<footer class="mt-5">
-  <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank"><b>HEXO</b></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/invom/Material-T" target="_blank"> <b>Material-T</b></a>
+    <div class="new-meta-box">
+      
+        <div class="new-meta-item author">
+          <a href="https://thyroidr.github.io/TPS-CS">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Ryan Wang
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class="notlink">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            2019-03-20
+          </a>
+        </div>
+      
+      
+        
+          
+          <div class="new-meta-item category">
+            <a href="/TPS-CS/categories/intro/">
+              <i class="fas fa-folder-open" aria-hidden="true"></i>
+              intro
+            </a>
+          </div>
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p>Consider a list of numbers in increasing order (that is, every number except the first is bigger than the previous number), e.g.</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">1 </span><span class="number">7</span> <span class="number">8</span> <span class="number">12</span> <span class="number">14</span> <span class="number">15</span> <span class="number">22</span> <span class="number">23</span> <span class="number">26</span> <span class="number">29</span></span><br></pre></td></tr></table></figure>
+<p>Suppse we want to develop an efficient method (algorithm) to find the smallest number in the list, that is larger than $x$. The simple method is just to iterate over the list, maintaining the smallest number larger than x that we have iterated so far and updating it at every step of iteration. This has a time complexity linear to the size of the list (which we will denote using $n$), we describe this using the Big-O notation $O(n)$.</p>
+<p>The Big-O notation roughly describes the number of computations needed to run an algorithm, in relation to some variables (in the above case $n$). Let the actual number of computations needed be function $a$, then contents of $O(\ldots)$ is a function $f$, such that for some $[k, \infty]$ values of the variables, $\exists l, h: lf \le a \le hf$. You can simply understand this as $f$ is a basic expression that best approximates $a$. </p>
+<p>The major question in informatics is how can we minimise the time complexity to solve certain problems. In this case, $O(n)$ is considered a poor time complexity. A time complexity of $O(\log_2 n)$ can be achieved using a technique of binary search ($\log_2 n$ grows much slower compared to $n$, when $n = 10^6$, $\log_2 n \le 20$).<br>
+        
+            <div class="readmore">
+                <a href="/TPS-CS/Binary-Search-and-Algorithmic-Analysis/" class="flat-box">
+                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+                    阅读全文
+                </a>
+            </div>
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/TPS-CS/tags/algo/"><i class="fas fa-hashtag fa-fw"></i>algo</a>
+                
+            </div>
+        
+    </p></section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class="post-wrapper">
+              <article class="post reveal ">
+    
+<section class="meta">
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/TPS-CS/Basic-C++/Basic-C-Conditional-Statements-and-Loops/">
+              
+                  Basic C++: Conditional Statements and Loops
+              
+          </a>
+      </h2>
+    
+
+    <div class="new-meta-box">
+      
+        <div class="new-meta-item author">
+          <a href="https://thyroidr.github.io/TPS-CS">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Ryan Wang
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class="notlink">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            2019-03-11
+          </a>
+        </div>
+      
+      
+        
+          
+          <div class="new-meta-item category">
+            <a href="/TPS-CS/categories/Basic-C/">
+              <i class="fas fa-folder-open" aria-hidden="true"></i>
+              Basic C++
+            </a>
+          </div>
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <h2 id="Boolean-Operators"><a href="#Boolean-Operators" class="headerlink" title="Boolean Operators"></a>Boolean Operators</h2><p>In addition to the arithmetic operators, there are also the boolean (logic) operators in C++. These are the operators that return a <code>true</code> value or a <code>false</code> value. <code>true</code> and <code>false</code> values can be replaced with <code>1</code> and <code>0</code> respectively, although really, in C++, <code>0</code> is <code>false</code>, and everything else is <code>true</code>. </p>
+<p>The operators below can be used to compare regular variables (so long as they have the operators defined, you don’t need to worry abot this).</p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>==</code></td>
+<td>returns true if the values of the operands are equal</td>
+<td><code>a == b</code></td>
+</tr>
+<tr>
+<td><code>&gt;=</code></td>
+<td>returns true if the value of the left operand is greater than or equal to the right operator</td>
+<td><code>a &gt;= b</code></td>
+</tr>
+<tr>
+<td><code>&lt;=</code></td>
+<td>returns true if the value of the left operand is lower than or equal to the right operator</td>
+<td><code>a &lt;= b</code></td>
+</tr>
+<tr>
+<td><code>&gt;</code></td>
+<td>returns true if the value of the left operand is greater than the right operator</td>
+<td><code>a &gt; b</code></td>
+</tr>
+<tr>
+<td><code>&lt;</code></td>
+<td>returns true if the value of the left operand is lower than the right operator</td>
+<td><code>a &lt; b</code></td>
+</tr>
+</tbody>
+</table>
+<p>The following operators are used for logical operations, in general, the operands for these should be boolean variables or expressions. </p>
+<table>
+<thead>
+<tr>
+<th>Operator</th>
+<th>Function</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>!</code></td>
+<td>not, changes <code>false</code> to <code>true</code> and <code>true</code> to <code>false</code></td>
+<td><code>!a</code></td>
+</tr>
+<tr>
+<td><code>&amp;&amp;</code></td>
+<td>and, return <code>true</code> if and only if both operands are <code>true</code></td>
+<td><code>a == b &amp;&amp; c &gt; a</code></td>
+</tr>
+<tr>
+<td>&#124;&#124;</td>
+<td>or, returns <code>true</code> if and only if at least one of the operands is <code>true</code></td>
+<td><code>a == b</code> &#124;&#124; <code>a &gt; b</code></td>
+</tr>
+</tbody>
+</table>
+        
+            <div class="readmore">
+                <a href="/TPS-CS/Basic-C++/Basic-C-Conditional-Statements-and-Loops/" class="flat-box">
+                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+                    阅读全文
+                </a>
+            </div>
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/TPS-CS/tags/c/"><i class="fas fa-hashtag fa-fw"></i>c++</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class="post-wrapper">
+              <article class="post reveal ">
+    
+<section class="meta">
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/TPS-CS/Basic-C++/Basic-C-IO-Variables-Simple-Arithmetics/">
+              
+                  Basic C++: IO &amp; Variables &amp; Simple Arithmetics
+              
+          </a>
+      </h2>
+    
+
+    <div class="new-meta-box">
+      
+        <div class="new-meta-item author">
+          <a href="https://thyroidr.github.io/TPS-CS">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Ryan Wang
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class="notlink">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            2019-03-11
+          </a>
+        </div>
+      
+      
+        
+          
+          <div class="new-meta-item category">
+            <a href="/TPS-CS/categories/Basic-C/">
+              <i class="fas fa-folder-open" aria-hidden="true"></i>
+              Basic C++
+            </a>
+          </div>
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <p><a href="https://www.onlinegdb.com/myfiles" target="_blank" rel="noopener">https://www.onlinegdb.com/myfiles</a><br>See:<br>IO: <a href="https://thyroidr.github.io/Basic-C++/input-output/">https://thyroidr.github.io/Basic-C++/input-output/</a> then students do “Hello World!”<br>Variables: <a href="https://thyroidr.github.io/Basic-C++/variables/">https://thyroidr.github.io/Basic-C++/variables/</a> then students declare and print variable.</p>
+<h2 id="Simple-Arithmetics"><a href="#Simple-Arithmetics" class="headerlink" title="Simple Arithmetics"></a>Simple Arithmetics</h2><h3 id="Unitary-Operators"><a href="#Unitary-Operators" class="headerlink" title="Unitary Operators"></a>Unitary Operators</h3><table>
+<thead>
+<tr>
+<th>Operators</th>
+<th>Operation</th>
+<th>Placement</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>++</td>
+<td>Add 1 to the operand</td>
+<td>In front of or after the operand</td>
+<td><code>++a</code> or <code>a++</code></td>
+</tr>
+<tr>
+<td>–</td>
+<td>Subtract 1 from the operand</td>
+<td>In front of or after the operand</td>
+<td><code>--a</code> or <code>a--</code></td>
+</tr>
+</tbody>
+</table>
+        
+            <div class="readmore">
+                <a href="/TPS-CS/Basic-C++/Basic-C-IO-Variables-Simple-Arithmetics/" class="flat-box">
+                    <i class="fas fa-book-open fa-fw" aria-hidden="true"></i>
+                    阅读全文
+                </a>
+            </div>
+        
+
+        
+            <div class="full-width auto-padding tags">
+                
+                    <a href="/TPS-CS/tags/c/"><i class="fas fa-hashtag fa-fw"></i>c++</a>
+                
+            </div>
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+          
+            <div class="post-wrapper">
+              <article class="post reveal ">
+    
+<section class="meta">
+  
+  
+  <div class="meta" id="header-meta">
+    
+      <h2 class="title">
+          <a href="/TPS-CS/Course-Outline/">
+              
+                  Course Outline
+              
+          </a>
+      </h2>
+    
+
+    <div class="new-meta-box">
+      
+        <div class="new-meta-item author">
+          <a href="https://thyroidr.github.io/TPS-CS">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Ryan Wang
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class="notlink">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            2019-03-11
+          </a>
+        </div>
+      
+      
+        
+      
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+        <center>“Computer science is no more about computers than astronomy is about telescopes” - Edsger Dijkstra</center>
+
+<p>Course delivered by Ryan Wang (current year 11 student at Bundah). </p>
+<h2 id="Goal"><a href="#Goal" class="headerlink" title="Goal"></a>Goal</h2><p>The course is aimed to improve students’ problem solving abilities and computational thinking. Skills developed are applicable in other STEM subjects. Contents covered are also mostly part of Undergraduate CS courses. This course targets and should be of interest to anyone interested in CS. Examples of contents that will be covered down the track include: Dijkstra’s shortest algorithm, Dynamic Programming, Monotone data structures, Algorithmic analysis. </p>
+<h2 id="Method"><a href="#Method" class="headerlink" title="Method"></a>Method</h2><p>The the first few lessons students will unfortunately have to use online IDEs (<a href="https://www.onlinegdb.com/myfiles" target="_blank" rel="noopener">https://www.onlinegdb.com/myfiles</a> is acceptable). Compilers and editors will hopefully be installed on school computers (or student computers if they wish to bring them) later on. The course will be taught using C++ (don’t stress, we will only need the very basics of C++). The focus is not on the programming language, rather, it is on the algorithms that are applicable to all programming languages. </p>
+<p>Each lesson will run for 60-90 minutes. Each lesson will start off with a lecture for 20 to 30 minutes, during which theoretical contents will be covered and students do not need their computers for programming (please use pen &amp; paper to take notes). The lesson will then move to lab time, during which students implement and (hopefully) extend beyond what the lecture has covered. Lab and lecture time will be mixed in the first few lessons.</p>
+<p>Students will need to solve problems on the training site by Australian Informatics Olympiad Committee at <a href="http://orac.amt.edu.au/cgi-bin/train/hub.pl" target="_blank" rel="noopener">http://orac.amt.edu.au/cgi-bin/train/hub.pl</a>. Help can be found at my blog for computer science, <a href="https://thyroidr.github.io">https://thyroidr.github.io</a> under the Basic-C++ category. In addition, all lecture notes will be available at <a href="https://thyroidr.github.io/TLPS-CS">https://thyroidr.github.io/TLPS-CS</a>.</p>
+<h2 id="Plan"><a href="#Plan" class="headerlink" title="Plan"></a>Plan</h2><table>
+<thead>
+<tr>
+<th>Week</th>
+<th>Content</th>
+<th>Other</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>3</td>
+<td>Basic C++: IO &amp; Variables &amp; Simple Arithmetics</td>
+<td>Solve Addition and Sitting or Standing?</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Basic C++: Conditional statements &amp; loops</td>
+<td></td>
+</tr>
+<tr>
+<td>7</td>
+<td>Basic C++: Functions</td>
+<td></td>
+</tr>
+<tr>
+<td>8</td>
+<td>Binary search and simple algorithmic analysis</td>
+<td>Actual computer science</td>
+</tr>
+<tr>
+<td>10</td>
+<td>Solving trivial problems</td>
+<td>May not take place</td>
+</tr>
+</tbody>
+</table>
+
+        
+
+        
+    </section>
+</article>
+
+            </div>
+          
+        
+      
+
+  </section>
+
+
+
+
+
+
+  
+
+  <!-- 根据主题中的设置决定是否在archive中针对摘要部分的MathJax公式加载mathjax.js文件 -->
+  
+
+  
+
+
+
+
+        </div>
+        <aside class='l_side'>
+            
+
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
+  
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
   </div>
 </footer>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/jquery-3.3.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/mdb.min.js"></script>
-  <script src="/TPS-CS/js/main.js"></script>
-  
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/TPS-CS/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+
+  <script src="/TPS-CS/js/app.js"></script>
+<script src="/TPS-CS/js/search.js"></script>
+<script src="/TPS-CS/js/clipboard-use.js"></script>
+
+
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {

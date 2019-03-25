@@ -1,93 +1,168 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
-
-
-
-
-
-
-
-
-
-
+<html>
 <head><meta name="generator" content="Hexo 3.8.0">
-    <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
-    <link rel="apple-touch-icon" sizes="76x76" href="/TPS-CS/apple-touch-icon.png">
-    <link rel="icon" type="image/png" href="/TPS-CS/favicon.png">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="description" content>
-    <meta name="author" content="Ryan Wang">
-    <meta name="keywords" content>
-    <title>Binary Search and Algorithmic Analysis ~ Telopea CS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/css/mdb.min.css">
-    <link rel="stylesheet" href="/TPS-CS/css/style.css">
-    <link rel="stylesheet" href="https://at.alicdn.com/t/font_1067060_vr10bjtg3us.css">
-    
-        <link rel="stylesheet" href="/TPS-CS/css/Prettify/tomorrow-night-eighties.min.css"><!-- hexo-inject:begin --><!-- hexo-inject:end -->
-    
+  <!-- hexo-inject:begin --><!-- hexo-inject:end --><meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  
+  <title>Binary Search and Algorithmic Analysis | Telopea CS</title>
+  
+  
+
+  
+
+  <meta name="HandheldFriendly" content="True">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <!-- meta -->
+  
+
+  <!-- link -->
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.css">
+  
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.6.3/css/all.min.css">
+  
+
+  
+
+  
+  <link rel="stylesheet" href="/TPS-CS/style.css">
+  
+
+  <script>
+    function setLoadingBarProgress(num) {
+      document.getElementById('loading-bar').style.width=num+"%";
+    }
+  </script><!-- hexo-inject:begin --><!-- hexo-inject:end -->
+
+  
+  
 </head>
 
 <body>
-  <!-- hexo-inject:begin --><!-- hexo-inject:end --><header style="height: 70vh;">
-    <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
-<div class="container">
-    <a class="navbar-brand" href="/TPS-CS/"><strong>Telopea CS</strong></a>
-
-    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <div class="animated-icon"><span></span><span></span><span></span></div>
-    </button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ml-auto text-center">
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/">Home</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/archives/">Archives</a>
-            </li>
-            
-            <li class="nav-item">
-                <a class="nav-link" href="/TPS-CS/about/">About</a>
-            </li>
-            
-        </ul>
-    </div>
+    <!-- hexo-inject:begin --><!-- hexo-inject:end --><div id="loading-bar-wrapper">
+  <div id="loading-bar" class="pure"></div>
 </div>
 
+    <script>setLoadingBarProgress(20)</script>
+    <header class="l_header pure">
+	<div class="wrapper">
+		<div class="nav-main container container--flex">
+      <a class="logo flat-box" href="/TPS-CS/">
+        
+          Telopea CS
+        
+      </a>
+			<div class="menu">
+				<ul class="h-list">
+          
+				</ul>
+			</div>
 
-</nav>
-    <div class="view intro-2" style='background: url("https://i.imgur.com/oADD1Ip.jpg")no-repeat center center;background-size: cover;'>
-    <div class="full-bg-img">
-        <div class="mask rgba-black-light flex-center">
-        <div class="container text-center white-text wow fadeInUp">
-            <p class="h2">Binary Search and Algorithmic Analysis</p>
-            <br>
-            
-            <p>Wednesday, March 20th 2019, 2:13 pm</p>
-            
-        </div>
-        </div>
-    </div>
-    </div>
-  </header>
+			
+				<div class="m_search">
+					<form name="searchform" class="form u-search-form">
+						<input type="text" class="input u-search-input" placeholder="搜索">
+						<span class="icon"><i class="fas fa-search fa-fw"></i></span>
+					</form>
+				</div>
+			
+			<ul class="switcher h-list">
+				
+					<li class="s-search"><a class="fas fa-search fa-fw" href="javascript:void(0)"></a></li>
+				
+				<li class="s-menu"><a class="fas fa-bars fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
 
-  <main>
+		<div class="nav-sub container container--flex">
+			<a class="logo flat-box"></a>
+			<ul class="switcher h-list">
+				<li class="s-comment"><a class="flat-btn fas fa-comments fa-fw" href="javascript:void(0)"></a></li>
+				<li class="s-toc"><a class="flat-btn fas fa-list fa-fw" href="javascript:void(0)"></a></li>
+			</ul>
+		</div>
+	</div>
+</header>
+	<aside class="menu-phone">
+    <header>
+		<nav class="menu">
+      <ul>
+          
+      </ul>
+		</nav>
+    </header>
+	</aside>
+
+    <script>setLoadingBarProgress(40);</script>
+    <div class="l_body">
+    <div class='container clearfix'>
+        <div class='l_main'>
+            <article id="post" class="post white-box article-type-post" itemscope itemprop="blogPost">
   
-  <div class="container-fluid">
-    <div class="row">
-        <div class="col-md-8 offset-md-2 ">
-            <div class="post-content py-5 z-depth-3 main">
-                <p>Consider a list of numbers in increasing order (that is, every number except the first is bigger than the previous number), e.g.</p>
-<pre><code>1 7 8 12 14 15 22 23 26 29
-</code></pre><p>Suppse we want to develop an efficient method (algorithm) to find the smallest number in the list, that is larger than $x$. The simple method is just to iterate over the list, maintaining the smallest number larger than x that we have iterated so far and updating it at every step of iteration. This has a time complexity linear to the size of the list (which we will denote using $n$), we describe this using the Big-O notation $O(n)$.</p>
+<section class="meta">
+  
+  
+  <div class="meta" id="header-meta">
+    
+      
+          <h1 class="title">Binary Search and Algorithmic Analysis</h1>
+      
+    
+
+    <div class="new-meta-box">
+      
+        <div class="new-meta-item author">
+          <a href="https://thyroidr.github.io/TPS-CS">
+            <i class="fas fa-user" aria-hidden="true"></i>
+            Ryan Wang
+          </a>
+        </div>
+      
+      
+        <div class="new-meta-item date">
+          <a class="notlink">
+            <i class="fas fa-clock" aria-hidden="true"></i>
+            2019-03-20
+          </a>
+        </div>
+      
+      
+        
+          
+          <div class="new-meta-item category">
+            <a href="/TPS-CS/categories/intro/">
+              <i class="fas fa-folder-open" aria-hidden="true"></i>
+              intro
+            </a>
+          </div>
+        
+      
+      
+        
+          <div class="new-meta-item browse busuanzi">
+            <a class="notlink">
+              <i class="fas fa-eye" aria-hidden="true"></i>
+              <span id="busuanzi_value_page_pv">
+                <i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i>
+              </span>
+            </a>
+          </div>
+        
+      
+      
+    </div>
+    <hr>
+  </div>
+</section>
+
+    <section class="article typo">
+      <div class="article-entry" itemprop="articleBody">
+        <p>Consider a list of numbers in increasing order (that is, every number except the first is bigger than the previous number), e.g.</p>
+<figure class="highlight basic"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="symbol">1 </span><span class="number">7</span> <span class="number">8</span> <span class="number">12</span> <span class="number">14</span> <span class="number">15</span> <span class="number">22</span> <span class="number">23</span> <span class="number">26</span> <span class="number">29</span></span><br></pre></td></tr></table></figure>
+<p>Suppse we want to develop an efficient method (algorithm) to find the smallest number in the list, that is larger than $x$. The simple method is just to iterate over the list, maintaining the smallest number larger than x that we have iterated so far and updating it at every step of iteration. This has a time complexity linear to the size of the list (which we will denote using $n$), we describe this using the Big-O notation $O(n)$.</p>
 <p>The Big-O notation roughly describes the number of computations needed to run an algorithm, in relation to some variables (in the above case $n$). Let the actual number of computations needed be function $a$, then contents of $O(\ldots)$ is a function $f$, such that for some $[k, \infty]$ values of the variables, $\exists l, h: lf \le a \le hf$. You can simply understand this as $f$ is a basic expression that best approximates $a$. </p>
-<p>The major question in informatics is how can we minimise the time complexity to solve certain problems. In this case, $O(n)$ is considered a poor time complexity. A time complexity of $O(\log_2 n)$ can be achieved using a technique of binary search ($\log_2 n$ grows much slower compared to $n$, when $n = 10^6$, $\log_2 n \le 20$). </p>
+<p>The major question in informatics is how can we minimise the time complexity to solve certain problems. In this case, $O(n)$ is considered a poor time complexity. A time complexity of $O(\log_2 n)$ can be achieved using a technique of binary search ($\log_2 n$ grows much slower compared to $n$, when $n = 10^6$, $\log_2 n \le 20$).<br><a id="more"></a></p>
 <h2 id="Binary-Search"><a href="#Binary-Search" class="headerlink" title="Binary Search"></a>Binary Search</h2><p>The technique uses the fact the numbers are sorted (the list is <strong>monotonic</strong>). In the following precedure, we denote the range the answer could be in as $[l, r]$, and the $i$-th element of the list as $A_i$. </p>
 <h3 id="Procedure"><a href="#Procedure" class="headerlink" title="Procedure"></a>Procedure</h3><ol>
 <li>Let us denote the number of numbers in the list as $n$. We will also set $l$ to $1$ and $r$ to $n$. </li>
@@ -95,84 +170,171 @@
 <li>Set $m$ (the middle element of $[l, r]$) to the floor of $\frac{l+r}{2}$.</li>
 <li>If $A_m \le x$ , set $l$ to $m+1$, else set $r$ to $m$, go to step 2.</li>
 </ol>
-<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><pre><code class="c++">int l = 1, r = n;
-while(l != r){
-    int m = (l + r) / 2;
-    if(A[m] &lt;= x)
-        l = m + 1;
-    else
-        r = m;
-}
-</code></pre>
+<h3 id="Code"><a href="#Code" class="headerlink" title="Code"></a>Code</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">int</span> l = <span class="number">1</span>, r = n;</span><br><span class="line"><span class="keyword">while</span>(l != r)&#123;</span><br><span class="line">    <span class="keyword">int</span> m = (l + r) / <span class="number">2</span>;</span><br><span class="line">    <span class="keyword">if</span>(A[m] &lt;= x)</span><br><span class="line">        l = m + <span class="number">1</span>;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">        r = m;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 <h3 id="Time-Complexity"><a href="#Time-Complexity" class="headerlink" title="Time Complexity"></a>Time Complexity</h3><p>Notice that $\log_2 k$ essentially means how many times do we need to divide $k$ by $2$ to get something smaller than 1 (only for positive $k$’s). Discuss why $O(\log_2 n)$ might be the time complexity for binary search.</p>
 <h2 id="Exercise"><a href="#Exercise" class="headerlink" title="Exercise"></a>Exercise</h2><p>Google Kick Start 2019 Practice Round: <a href="https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051060/00000000000588f4" target="_blank" rel="noopener">https://codingcompetitions.withgoogle.com/kickstart/round/0000000000051060/00000000000588f4</a></p>
 <p>This problem might take you a long time thinking or googling about binary search<br>FARIO 2009: <a href="http://orac.amt.edu.au/cgi-bin/train/problem.pl?problemid=378" target="_blank" rel="noopener">http://orac.amt.edu.au/cgi-bin/train/problem.pl?problemid=378</a></p>
 <p>Ctrl-A for hint:<br><span style="color:white">Consider binary searching the possible answers and then testing if they are possible</span></p>
 
-                <hr>
-                <div>
-                    <p>
-                         
-                        <span class="badge badge-light">#&nbsp;algo</span>
-                        &nbsp;
-                        
-                    </p>
+      </div>
+        
+          <section class="meta" id="footer-meta">
+            <hr>
+            <div class="new-meta-box">
+              
+                <div class="new-meta-item date" itemprop="dateUpdated" datetime="2019-03-25T21:11:50+11:00">
+                  <a class="notlink">
+                    <i class="fas fa-pencil-alt" aria-hidden="true"></i>
+                    2019-03-25
+                  </a>
                 </div>
-                <br>
+              
+              
                 
-                    <p class="note note-warning">CC-BY-SA 3.0</p>
+                <div class="new-meta-item meta-tags"><a class="tag" href="/TPS-CS/tags/algo/"><i class="fas fa-hashtag" aria-hidden="true"></i>&nbsp;algo</a></div>
+              
+              
+            </div>
+          </section>
+        
+
+        
+            <div class="prev-next">
+                
+                
+                    <section class="next">
+                        <span class="art-item-right" aria-hidden="true">
+                            <h6>下一页&nbsp;<i class="fas fa-chevron-right" aria-hidden="true"></i></h6>
+                            <h4>
+                                <a href="/TPS-CS/Basic-C++/Basic-C-Conditional-Statements-and-Loops/" rel="prev" title="Basic C++: Conditional Statements and Loops">
+                                    
+                                        Basic C++: Conditional Statements and Loops
+                                    
+                                </a>
+                            </h4>
+                            
+                                
+                                <h6 class="tags">
+                                    <a class="tag" href="/TPS-CS/tags/c/"><i class="fas fa-hashtag fa-fw" aria-hidden="true"></i>c++</a>
+                                </h6>
+                            
+                        </span>
+                    </section>
                 
             </div>
+        
+
+    </section>
+
+</article>
+
+<!-- 根据页面mathjax变量决定是否加载MathJax数学公式js -->
+
+
+<br>
+
+<!-- 显示推荐文章和评论 -->
+
+
+
+
+
+<script>
+    window.subData = {
+        title: 'Binary Search and Algorithmic Analysis',
+        tools: true
+    }
+</script>
+
+
         </div>
-        <div class="d-none d-md-block col-md-2">
+        <aside class='l_side'>
             
-  <div id="toc" class="py-5">
-    <p class="h6"><i class="iconfont icon-toc" style="vertical-align:middle"></i> Toc:</p> 
-    <div id="tocbot"></div>
-  </div>
 
-        </div>
-    </div>        
-</div>
-
-<br><br><br>
-
-<!-- Comments -->
-<div class="comments" id="comments">
- 
-</div>
+        </aside>
+        <script>setLoadingBarProgress(60);</script>
+    </div>
+    <a class="s-top fas fa-arrow-up fa-fw" href='javascript:void(0)'></a>
+    </div>
+    <footer id="footer" class="clearfix">
   
-  </main>
-
-<footer class="mt-5">
-  <div class="text-center py-3">
-    <a href="https://hexo.io" target="_blank"><b>HEXO</b></a>
-    <i class="iconfont icon-love"></i>
-    <a href="https://github.com/invom/Material-T" target="_blank"> <b>Material-T</b></a>
+  
+  <br>
+  <div><p>博客内容遵循 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh">署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</a></p>
+</div>
+  <div>本站使用 <a href="https://xaoxuu.com/wiki/material-x/" target="_blank" class="codename">Material X</a> 作为主题，总访问量为 <span id="busuanzi_value_site_pv"><i class="fas fa-spinner fa-spin fa-fw" aria-hidden="true"></i></span> 次。
   </div>
 </footer>
 
-  <!-- SCRIPTS -->
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/jquery-3.3.1.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/bootstrap.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mdbootstrap@4.7.4/js/mdb.min.js"></script>
-  <script src="/TPS-CS/js/main.js"></script>
-  
-    
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
-    
-    <script src="/TPS-CS/js/post.js"></script>
-    
-      <script src="/TPS-CS/js/plugins/prettify.js"></script>
-      <script>
-          $(document).ready(function(){
-              $('pre').addClass('prettyprint linenums');
-              prettyPrint();
-          })
-      </script>
-    
-  
+    <script>setLoadingBarProgress(80);</script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+
+  <script>
+    var GOOGLE_CUSTOM_SEARCH_API_KEY = "";
+    var GOOGLE_CUSTOM_SEARCH_ENGINE_ID = "";
+    var ALGOLIA_API_KEY = "";
+    var ALGOLIA_APP_ID = "";
+    var ALGOLIA_INDEX_NAME = "";
+    var AZURE_SERVICE_NAME = "";
+    var AZURE_INDEX_NAME = "";
+    var AZURE_QUERY_KEY = "";
+    var BAIDU_API_ID = "";
+    var SEARCH_SERVICE = "hexo" || "hexo";
+    var ROOT = "/TPS-CS/"||"/";
+    if(!ROOT.endsWith('/'))ROOT += '/';
+  </script>
+
+
+
+  <script async src="https://cdn.jsdelivr.net/npm/scrollreveal@4.0.5/dist/scrollreveal.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      const $reveal = $('.reveal');
+      if ($reveal.length === 0) return;
+      const sr = ScrollReveal({ distance: 0 });
+      sr.reveal('.reveal');
+    });
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/node-waves@0.7.6/dist/waves.min.js"></script>
+  <script type="text/javascript">
+    $(function() {
+      Waves.attach('.flat-btn', ['waves-button']);
+      Waves.attach('.float-btn', ['waves-button', 'waves-float']);
+      Waves.attach('.float-btn-light', ['waves-button', 'waves-float', 'waves-light']);
+      Waves.attach('.flat-box', ['waves-block']);
+      Waves.attach('.float-box', ['waves-block', 'waves-float']);
+      Waves.attach('.waves-image');
+      Waves.init();
+    });
+  </script>
+
+
+  <script async src="https://cdn.jsdelivr.net/gh/xaoxuu/cdn-busuanzi@2.3/js/busuanzi.pure.mini.js"></script>
+
+
+
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+
+
+  <script src="/TPS-CS/js/app.js"></script>
+<script src="/TPS-CS/js/search.js"></script>
+<script src="/TPS-CS/js/clipboard-use.js"></script>
+
+
+
+
+
+
+
+    <script>setLoadingBarProgress(100);</script>
 <script type="text/x-mathjax-config">
     MathJax.Hub.Config({
         tex2jax: {
